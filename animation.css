@@ -1,0 +1,60 @@
+
+
+/* bodY {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+  } */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.waving {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, rgb(231, 193, 0), #fff);
+    margin: 10px;
+    animation: waving 1s linear infinite;
+    border-radius: 20px;
+}
+.waving:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.waving:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.waving:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.waving:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.waving:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.waving:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.waving:nth-child(8) {
+    animation-delay: 0.7s;
+}
+.waving:nth-child(9) {
+    animation-delay: 0.8s;
+}
+.waving:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+@keyframes waving {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
