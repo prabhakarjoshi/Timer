@@ -14,7 +14,7 @@
 .waving {
     width: 5px;
     height: 100px;
-    background: linear-gradient(45deg, rgb(231, 193, 0), #fff);
+    background: linear-gradient(45deg, rgb(231, 193, 0), cyan);
     margin: 10px;
     animation: waving 1s linear infinite;
     border-radius: 20px;

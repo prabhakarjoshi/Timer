@@ -1,12 +1,14 @@
 body{
     background: #000;
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 h1,h2,.display{
-    color: rgb(255, 255, 255);
-    font-family:Lucida;
+    color: cyan;
+    /* font-family:cursive; */
+    
 }
 .timer {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     text-align: center;
     border: 2px dashed yellowgreen;
 }

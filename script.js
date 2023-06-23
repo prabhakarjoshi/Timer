@@ -12,7 +12,7 @@ function stopwave(){
 function startwave(){
     var allWave=document.getElementsByClassName("wave")
     for(let i=0;i<allWave.length;i++) 
-        allWave[i].style.background="linear-gradient(45deg, cyan, #fff)";
+        allWave[i].style.background="linear-gradient(45deg,  rgb(231, 193, 0), cyan)";
 }
 function startTimer() {
     startwave()
