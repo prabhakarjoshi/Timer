@@ -2,20 +2,35 @@ let timer;
 let minutes = 0;
 let seconds = 0;
 const display = document.getElementsByClassName('display');
+let allWave=document.getElementsByClassName("wave")
+var started=false;
 
 function stopwave(){
-    var allWave=document.getElementsByClassName("wave")
+    started=false;
+    const box=document.getElementsByClassName("timer")[0];
     for(let i=0;i<allWave.length;i++) 
-        allWave[i].style.background=" #000"
+    {
+        allWave[i].style.background=" #000";
+    }
+    box.style.border="2px dashed black";
 }
 
 function startwave(){
-    var allWave=document.getElementsByClassName("wave")
-    for(let i=0;i<allWave.length;i++) 
+    const box=document.getElementsByClassName("timer")[0];
+    for(let i=0;i<allWave.length;i++) {
         allWave[i].style.background="linear-gradient(45deg,  rgb(231, 193, 0), cyan)";
+    }
+    box.style.border="2px dashed yellowgreen";
 }
+
 function startTimer() {
-    startwave()
+    if(started){
+        return;
+    }
+    started=true;
+    console.log("p")
+
+    startwave();
     timer = setInterval(() => {
     seconds++;
     if (seconds === 60) {
@@ -23,7 +38,7 @@ function startTimer() {
         seconds = 0;
     }
     display[0].innerText = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-  }, 1000);
+    }, 1000);
 }
 
 function stopTimer() {
@@ -39,4 +54,4 @@ function pauseTimer() {
     clearInterval(timer);
 }
 
-stopwave()
+// stopwave()

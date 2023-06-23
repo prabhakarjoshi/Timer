@@ -1,6 +1,8 @@
 body{
-    background: #000;
-    font-family: 'Ysabeau Infant', sans-serif;
+    /* background: #000; */
+    background: linear-gradient(90deg, #0a1647 0%, #294861 100%);
+
+    font-family: 'Delius Unicase', cursive;
 }
 h1,h2,.display{
     color: cyan;
@@ -10,7 +12,9 @@ h1,h2,.display{
 .timer {
     /* font-family: Arial, sans-serif; */
     text-align: center;
-    border: 2px dashed yellowgreen;
+    border: 2px dashed black;
+    padding: 100px 70px;
+    margin: 0 30px;
 }
 
 .display {
@@ -19,22 +23,24 @@ h1,h2,.display{
 }
 
 .controls button {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
     border: none;
-    color: white;
+    /* color: white; */
+    color:cyan;
     padding: 12px 24px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
 }
-
+/* 
 .controls button:hover {
     background-color: #3e8e41;
-}
+} */
 
-.controls button:active {
+/* .controls button:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
+} */
+
